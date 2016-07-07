@@ -1,0 +1,22 @@
+<svg id="Nav" xmlns="http://www.w3.org/2000/svg" width="36" height="25" viewBox="0 0 36 25">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+
+      .cls-1 {
+        stroke: #fff;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="Hamburger">
+    <path class="cls-1" d="M2,3V2H34V3H2Z"/>
+    <path id="Shape_2_copy" data-name="Shape 2 copy" class="cls-1" d="M2,13V12H34v1H2Z"/>
+    <path id="Shape_2_copy_2" data-name="Shape 2 copy 2" class="cls-1" d="M2,23V22H34v1H2Z"/>
+  </g>
+  <path id="Search" class="cls-2" d="M502.066,29.066a3,3,0,0,1-4.242,0l-5.3-5.3a14.074,14.074,0,1,1,4.242-4.243l5.295,5.295A3,3,0,0,1,502.066,29.066ZM485,2a10,10,0,1,0,10,10A10,10,0,0,0,485,2Z"/>
+</svg>

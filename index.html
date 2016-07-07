@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Music Browser - Ryan Jung</title>
+    <link rel="stylesheet" type="text/css" href="css/musicStyle.css">
+</head>
+
+<body>
+    <div id="music-page">
+        <header id="music-page__header">
+            <nav id="top-nav">
+                <button type="button" id="nav__menu-button" class="navbar-toggle menu-icon visible" data-toggle="collapse" aria-label="Open Menu List" aria-describedby="menu-button-description">
+                    <img src="img/icons/hamburger.svg" class="navbar-icon" type="hamburger-icon" />
+                </button>
+                <button type="button" id="nav__menu-cancel-button" class="navbar-toggle cancel-icon" data-toggle="collapse" aria-label="Close Menu List" aria-describedby="close-menu-button-description">
+                    <img src="img/icons/cancel.svg" class="navbar-icon" type="cancel-icon" />
+                </button>
+                <div id="top-nav__menu" class="collapsible-menu">
+                    <ul class="main-nav__items">
+                        <li class="main-nav__item"><a href="#">My Music</a></li>
+                        <li class="main-nav__item"><a href="#">Playlist</a></li>
+                        <li class="main-nav__item"><a href="#">New</a></li>
+                        <li class="main-nav__item"><a href="#">Explore</a></li>
+                    </ul>
+                </div>
+                <div class="top-nav__search"><img src="img/icons/search.svg" class="navbar-toggle search-icon navbar-icon" type="search-icon" /></div>
+            </nav>
+        </header>
+        <main class="main-content grid__container">
+            <div class="grid-row">
+                <section class="music-spotlight grid__col8">
+                    <div class="spotlight-item">
+                        <img src="img/spotlight/cosmos.png" alt="cosmos" class="spotlight-img" />
+                        <div class="spotlight-text">
+                            <h2 class="spotlight-text--title">New and Noteworthy</h2>
+                            <h3 class="spotlight-text--subtitle">Kicking off 2016 with these new hits</h3>
+                        </div>
+                    </div>
+                    <div class="spotlight-item">
+                        <img src="img/spotlight/records.png" alt="cosmos" class="spotlight-img" />
+                        <div class="spotlight-text">
+                            <h2 class="spotlight-text--title">Pre-Order New Music</h2>
+                            <h3 class="spotlight-text--subtitle">Available later this season</h3>
+                        </div>
+                    </div>
+                    <div class="spotlight-item">
+                        <img src="img/spotlight/cassette.png" alt="cosmos" class="spotlight-img" />
+                        <div class="spotlight-text">
+                            <h2 class="spotlight-text--title">Best of 2015</h2>
+                            <h3 class="spotlight-text--subtitle">Rewind last year's best hits</h3>
+                        </div>
+                    </div>
+                    <div class="spotlight-item">
+                        <img src="img/spotlight/stage.png" alt="cosmos" class="spotlight-img" />
+                        <div class="spotlight-text">
+                            <h2 class="spotlight-text--title">New Artist Spotlight</h2>
+                            <h3 class="spotlight-text--subtitle">Hear some of the newest hits in 2016</h3>
+                        </div>
+                    </div>
+                </section>
+                <section class="top-songs grid__col4">
+                    <h1 class="top-songs__section-title">TOP SONGS</h1>
+                    <ul id="top-songs-list">
+                        <li class="top-song">
+                            <img src="img/top-songs/desiigner.png" alt="Artist Desiigner" class="top-song__img" />
+                            <p class="top-song__text">
+                                <span class="top-song__text--song">Panda</span>
+                                <span class="top-song__text--artist">Desiigner</span>
+                            </p>
+                        </li>
+                        <li class="top-song">
+                            <img src="img/top-songs/rihanna.png" alt="Artist Rihanna" class="top-song__img" />
+                            <p class="top-song__text">
+                                <span class="top-song__text--song">Needed Me</span>
+                                <span class="top-song__text--artist">Rihanna</span>
+                            </p>
+                        </li>
+                        <li class="top-song">
+                            <img src="img/top-songs/chainsmokers.png" alt="Artist Chainsmokers, Daya" class="top-song__img" />
+                            <p class="top-song__text">
+                                <span class="top-song__text--song">Don't Let Me Down</span>
+                                <span class="top-song__text--artist">Chainsmokers, Daya</span>
+                            </p>
+                        </li>
+                        <li class="top-song">
+                            <img src="img/top-songs/lukas-graham.png" alt="Artist Lukas Graham" class="top-song__img" />
+                            <p class="top-song__text">
+                                <span class="top-song__text--song">7 Years</span>
+                                <span class="top-song__text--artist">Lukas Graham</span>
+                            </p>
+                        </li>
+                        <li class="top-song">
+                            <img src="img/top-songs/rihanna.png" alt="Artist Rihanna" class="top-song__img" />
+                            <p class="top-song__text">
+                                <span class="top-song__text--song">Work</span>
+                                <span class="top-song__text--artist">Rihanna, Drake</span>
+                            </p>
+                        </li>
+                        <li class="top-song">
+                            <img src="img/top-songs/mike-posner.png" alt="artist desiigner" class="top-song__img" />
+                            <p class="top-song__text">
+                                <span class="top-song__text--song">I Took A Pill In Ibiza - Seeb Remix</span>
+                                <span class="top-song__text--artist">Mike Posner</span>
+                            </p>
+                        </li>
+                    </ul>
+                    <button id="top-songs__see-more">See More</button>
+                </section>
+        </main>
+        <footer id="music-page__footer">
+        <div class="footer-copyright">Copyright &copy; 2016, All rights Reserved.</div> 
+            <nav id="footer-nav">
+                <ul class="footer-nav__items">
+                    <li class="footer-nav__item">Contact Us</li>
+                    <li class="footer-nav__item">Privacy &amp; Cookies</li>
+                    <li class="footer-nav__item">Terms of Use</li>
+                    <li class="footer-nav__item">Sales and Refunds</li>
+                    <li class="footer-nav__item">Site Map</li>
+                </ul>
+            </nav>
+            <footer>
+                </div>
+</body>
+<script type="text/javascript" src="js/behaviors.js"></script>
+
+</html>

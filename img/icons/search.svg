@@ -1,0 +1,11 @@
+<svg id="Nav" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Search" class="cls-1" d="M31.066,31.066a3,3,0,0,1-4.243,0l-5.295-5.3a14.071,14.071,0,1,1,4.243-4.243l5.295,5.295A3,3,0,0,1,31.066,31.066ZM14,4A10,10,0,1,0,24,14,10,10,0,0,0,14,4Z"/>
+</svg>

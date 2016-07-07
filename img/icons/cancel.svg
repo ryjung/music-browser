@@ -1,0 +1,30 @@
+<svg id="Nav_Opened" data-name="Nav Opened" xmlns="http://www.w3.org/2000/svg" width="30" height="28" viewBox="0 0 30 28">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 16px;
+        font-family: "San Francisco Display";
+        text-transform: uppercase;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        stroke: #fff;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <text id="my_music" data-name="my music" class="cls-1" transform="translate(-1.258 99.977) scale(2)">my music</text>
+  <text id="playlist" class="cls-1" transform="translate(-1.258 190.977) scale(2)">playlist</text>
+  <text id="new" class="cls-1" transform="translate(-1.258 281.977) scale(2)">new</text>
+  <text id="explore" class="cls-1" transform="translate(-0.258 371.977) scale(2)">explore</text>
+  <g id="Hamburger_copy" data-name="Hamburger copy">
+    <path class="cls-2" d="M4.04,25.167L3.333,24.46,25.96,1.833,26.667,2.54Z"/>
+    <path id="Shape_2_copy" data-name="Shape 2 copy" class="cls-2" d="M4.333,3.54L5.04,2.833,27.667,25.46l-0.707.707Z"/>
+  </g>
+</svg>
