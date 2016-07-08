@@ -16,8 +16,6 @@ body {
   font-size: 16px;
   color: #FFF; }
 
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  background: url(../img/headphones2x.png) no-repeat left top fixed; }
 #music-page {
   background-color: rgba(20, 21, 25, 0.93);
   height: 100%;
@@ -29,8 +27,7 @@ body {
     /* navigation */ }
     #music-page #music-page__header #top-nav {
       text-align: center;
-      letter-spacing: 1.2px;
-      /* mobile nav */ }
+      letter-spacing: 1.2px; }
       #music-page #music-page__header #top-nav .main-nav__items {
         margin: 0;
         padding: 0;
@@ -73,62 +70,13 @@ body {
           #music-page #music-page__header #top-nav .top-nav__search {
             display: inline-block;
             margin: 22px 25px; } }
-      @media (max-width: 1024px) {
-        #music-page #music-page__header #top-nav #nav__menu-button.visible,
-        #music-page #music-page__header #top-nav #nav__menu-cancel-button.visible {
-          display: inline-block; }
-        #music-page #music-page__header #top-nav .navbar-toggle {
-          border: 0;
-          cursor: pointer; }
-          #music-page #music-page__header #top-nav .navbar-toggle.menu-icon, #music-page #music-page__header #top-nav .navbar-toggle.cancel-icon {
-            z-index: 6;
-            position: absolute;
-            left: 34px;
-            top: 16px; }
-          #music-page #music-page__header #top-nav .navbar-toggle.menu-icon:hover, #music-page #music-page__header #top-nav .navbar-toggle.cancel-icon:hover {
-            opacity: .7; }
-          #music-page #music-page__header #top-nav .navbar-toggle .cancel-icon:before,
-          #music-page #music-page__header #top-nav .navbar-toggle .cancel-icon:after {
-            content: " ";
-            display: table; }
-          #music-page #music-page__header #top-nav .navbar-toggle .cancel-icon:after {
-            clear: both; }
-          #music-page #music-page__header #top-nav .navbar-toggle.search-icon {
-            float: right;
-            display: inline-block;
-            position: absolute;
-            top: 16px;
-            right: 34px; }
-          #music-page #music-page__header #top-nav .navbar-toggle.search-icon:hover {
-            opacity: .7; }
-        #music-page #music-page__header #top-nav .main-nav__items .main-nav__item {
-          display: block;
-          text-align: left;
-          padding: 0 0 34px 34px; }
-        #music-page #music-page__header #top-nav .collapsible-menu {
-          display: none; }
-        #music-page #music-page__header #top-nav .expanded {
-          display: block;
-          position: absolute;
-          top: 0;
-          left: 0;
-          z-index: 3;
-          background-color: rgba(0, 0, 0, 0.95);
-          width: 100%;
-          padding-top: 72px; } }
 
 /* grid system */
 .grid__container {
-  min-width: 320px;
+  width: 1024px;
   margin: 0 auto;
   box-sizing: border-box; }
 
-@media (min-width: 1024px) {
-  .grid__container {
-    width: 1024px; } }
-@media (max-width: 1024px) and (min-width: 768px) {
-  .grid__container {
-    width: 768px; } }
 .grid__row {
   position: relative; }
 
@@ -143,22 +91,19 @@ body {
 .grid__col4,
 .grid__col8 {
   position: relative;
+  float: left;
   min-height: 1px;
   padding-right: 28px;
   padding-left: 28px;
   box-sizing: border-box;
   border: none; }
 
-@media (min-width: 1024px) {
-  .grid__col4,
-  .grid__col8 {
-    float: left; }
+.grid__col4 {
+  width: 315px; }
 
-  .grid__col4 {
-    width: 315px; }
+.grid__col8 {
+  width: 664px; }
 
-  .grid__col8 {
-    width: 664px; } }
 /* main content */
 .main-content {
   margin-top: 84px;
@@ -182,7 +127,7 @@ body {
 .spotlight-item {
   position: relative;
   float: left;
-  width: 304px; }
+  max-width: 304px; }
   .spotlight-item .spotlight-img {
     max-width: 100%; }
   .spotlight-item .spotlight-text {
@@ -203,13 +148,6 @@ body {
 
   .spotlight-item:nth-child(-n+2) {
     margin-bottom: 30px; } }
-@media (max-width: 1024px) {
-  .spotlight-item {
-    float: none;
-    margin: 0 auto; }
-
-  .spotlight-item:nth-child(-n+3) {
-    margin-bottom: 9px; } }
 /* top songs */
 .top-songs {
   margin-left: 45px;
@@ -218,7 +156,7 @@ body {
     margin: 0 0 33px;
     color: #FFF;
     font-size: 16px;
-    line-height: 10px; }
+    line-height: 16px; }
   .top-songs #top-songs-list {
     margin: 0;
     padding: 0;
@@ -254,28 +192,6 @@ body {
     line-height: 10px;
     letter-spacing: 1.2px; }
 
-@media (max-width: 1024px) {
-  .main-content {
-    margin-top: 7px;
-    margin-bottom: 44px; }
-
-  .music-spotlight {
-    margin-bottom: 44px;
-    padding-left: 0; }
-
-  .top-songs {
-    border: 0;
-    margin: 0 auto;
-    padding: 0;
-    width: 304px; }
-    .top-songs #top-songs-list {
-      height: 216px;
-      overflow: hidden; }
-      .top-songs #top-songs-list.expanded {
-        height: inherit;
-        margin-bottom: 24px; }
-    .top-songs #top-songs__see-more {
-      display: block; } }
 #music-page__footer {
   margin: 0 auto;
   padding-bottom: 84px;
@@ -299,18 +215,173 @@ body {
         margin-right: 22px;
         color: #fef378; }
 
+/* mobile style */
 @media (max-width: 1024px) {
-  #music-page__footer {
+  body {
+    background-image: none;
+    background-color: rgba(0, 0, 0, 0.6); }
+
+  .grid__container {
     width: 100%; }
-    #music-page__footer .footer-copyright {
+
+  .grid__col4,
+  .grid__col8 {
+    float: none;
+    width: 100%; }
+
+  #music-page #music-page__header {
+    /* mobile nav */ }
+    #music-page #music-page__header #top-nav #nav__menu-button.visible,
+    #music-page #music-page__header #top-nav #nav__menu-cancel-button.visible {
+      display: inline-block; }
+    #music-page #music-page__header #top-nav .navbar-toggle {
+      border: 0;
+      cursor: pointer; }
+      #music-page #music-page__header #top-nav .navbar-toggle.menu-icon, #music-page #music-page__header #top-nav .navbar-toggle.cancel-icon {
+        z-index: 6;
+        position: absolute;
+        left: 34px;
+        top: 16px; }
+      #music-page #music-page__header #top-nav .navbar-toggle.menu-icon:hover, #music-page #music-page__header #top-nav .navbar-toggle.cancel-icon:hover {
+        opacity: .7; }
+      #music-page #music-page__header #top-nav .navbar-toggle .cancel-icon:before,
+      #music-page #music-page__header #top-nav .navbar-toggle .cancel-icon:after {
+        content: " ";
+        display: table; }
+      #music-page #music-page__header #top-nav .navbar-toggle .cancel-icon:after {
+        clear: both; }
+      #music-page #music-page__header #top-nav .navbar-toggle.search-icon {
+        float: right;
+        display: inline-block;
+        position: absolute;
+        top: 16px;
+        right: 34px; }
+      #music-page #music-page__header #top-nav .navbar-toggle.search-icon:hover {
+        opacity: .7; }
+    #music-page #music-page__header #top-nav .main-nav__items .main-nav__item {
+      display: block;
+      text-align: left;
+      padding: 0 0 34px 34px; }
+    #music-page #music-page__header #top-nav .collapsible-menu {
+      display: none; }
+    #music-page #music-page__header #top-nav .expanded {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 3;
+      background-color: rgba(0, 0, 0, 0.95);
+      width: 100%;
+      padding-top: 72px; }
+  #music-page .main-content {
+    margin-top: 7px;
+    margin-bottom: 44px; }
+  #music-page .music-spotlight {
+    margin-bottom: 44px;
+    padding-left: 0; }
+  #music-page .spotlight-item {
+    float: none;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 304px; }
+  #music-page .spotlight-item:nth-child(-n+3) {
+    margin-bottom: 9px; }
+  #music-page .top-songs {
+    border: 0;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 304px; }
+    #music-page .top-songs #top-songs-list {
+      height: 216px;
+      overflow: hidden; }
+      #music-page .top-songs #top-songs-list.expanded {
+        height: inherit;
+        margin-bottom: 24px; }
+    #music-page .top-songs #top-songs__see-more {
+      display: block; }
+  #music-page #music-page__footer {
+    width: 100%; }
+    #music-page #music-page__footer .footer-copyright {
       display: block;
       margin: 0 0 15px; }
-    #music-page__footer #footer-nav {
+    #music-page #music-page__footer #footer-nav {
       display: block; }
-      #music-page__footer #footer-nav .footer-nav__items {
+      #music-page #music-page__footer #footer-nav .footer-nav__items {
         text-align: center; }
-        #music-page__footer #footer-nav .footer-nav__items li.footer-nav__item {
+        #music-page #music-page__footer #footer-nav .footer-nav__items li.footer-nav__item {
           display: block;
           margin: 0 0 15px; } }
+@media (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1024px) and (min-resolution: 192dpi) {
+  body {
+    font-size: 32px;
+    background-image: none;
+    background-color: rgba(0, 0, 0, 0.6); }
+
+  #music-page #music-page__header {
+    min-height: 91px; }
+    #music-page #music-page__header #top-nav .main-nav__items .main-nav__item {
+      padding: 34px 68px; }
+    #music-page #music-page__header #top-nav .navbar-toggle {
+      width: 36px;
+      height: 32px; }
+      #music-page #music-page__header #top-nav .navbar-toggle.menu-icon, #music-page #music-page__header #top-nav .navbar-toggle.cancel-icon {
+        left: 68px;
+        top: 33px; }
+      #music-page #music-page__header #top-nav .navbar-toggle.search-icon {
+        width: 32px;
+        top: 33px;
+        right: 68px; }
+      #music-page #music-page__header #top-nav .navbar-toggle .navbar-icon {
+        width: 32px; }
+  #music-page .main-content {
+    margin-top: 14px;
+    margin-bottom: 88px; }
+  #music-page .music-spotlight {
+    margin-bottom: 88px;
+    padding-left: 0; }
+  #music-page .spotlight-item {
+    max-width: 608px; }
+    #music-page .spotlight-item .spotlight-text {
+      position: absolute;
+      bottom: 32px;
+      left: 38px; }
+    #music-page .spotlight-item .spotlight-text--title {
+      font-size: 42px; }
+    #music-page .spotlight-item .spotlight-text--subtitle {
+      font-size: 32px;
+      line-height: 32px; }
+  #music-page .spotlight-item:nth-child(-n+3) {
+    margin-bottom: 18px; }
+  #music-page .top-songs {
+    max-width: 608px; }
+    #music-page .top-songs .top-songs__section-title {
+      margin: 0 0 66px;
+      font-size: 32px;
+      line-height: 32px; }
+    #music-page .top-songs #top-songs-list {
+      height: 360px; }
+      #music-page .top-songs #top-songs-list .top-song__img {
+        max-width: 88px; }
+      #music-page .top-songs #top-songs-list.expanded {
+        height: inherit;
+        margin-bottom: 48px; }
+    #music-page .top-songs #top-songs__see-more {
+      width: 506px;
+      height: 88px;
+      border-radius: 50px;
+      padding: 32px 0;
+      font-size: 32px;
+      line-height: 32px;
+      letter-spacing: 1.2px; }
+  #music-page #music-page__footer {
+    width: 100%;
+    padding-bottom: 168px;
+    font-size: 20px;
+    line-height: 20px; }
+    #music-page #music-page__footer .footer-copyright {
+      margin: 0 0 30px; }
+    #music-page #music-page__footer #footer-nav .footer-nav__items li.footer-nav__item {
+      display: block;
+      margin: 0 0 30px; } }
 
 /*# sourceMappingURL=musicStyle.css.map */

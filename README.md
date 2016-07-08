@@ -1,6 +1,6 @@
 Name: Ryan Jung
 
-Tools used: iTerm, SASS, Sublime Text, Safari, Chrome, and Firefox
+Tools used: Photoshop, iTerm, SASS, Sublime Text, Safari, Chrome, and Firefox
 
 Editor used: Sublime Text 
 
